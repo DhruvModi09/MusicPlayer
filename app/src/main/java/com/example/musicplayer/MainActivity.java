@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         runtimePermission();
     }
 
-    public void runtimePermission()
-    {
+    public void runtimePermission() {
         Dexter.withContext(this).withPermissions(Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.RECORD_AUDIO).withListener(new MultiplePermissionsListener() {
             @Override
             public void onPermissionsChecked(MultiplePermissionsReport multiplePermissionsReport) {
